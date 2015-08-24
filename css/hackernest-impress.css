@@ -198,10 +198,18 @@ p {
   opacity: 1;
 }
 
-#venue .logo {
+#venue .logo,
+#sponsor-1 .logo,
+#sponsor-2 .logo {
   width: 60%;
   margin: auto;
+  padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.logo.twitter img {
+  max-height: 200px;
+  padding: 20px;
 }
 
 .thanks {
