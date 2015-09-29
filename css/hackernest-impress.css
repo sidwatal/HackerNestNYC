@@ -207,6 +207,10 @@ p {
   padding-bottom: 20px;
 }
 
+.logo.techweek img {
+  width: 100%;
+}
+
 .logo.twitter img {
   max-height: 200px;
   padding: 20px;
