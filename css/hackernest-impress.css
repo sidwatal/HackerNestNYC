@@ -1,0 +1,301 @@
+/* Hide the fallback message if it's working */
+.impress-supported .fallback-message {
+  display: none;
+}
+
+/* Basic step styles, lovingly adapted from the impress.js demo */
+.step {
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.impress-enabled .step {
+  margin: 0;
+  opacity: 0.3;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.impress-enabled .step.active {
+  opacity: 1
+}
+
+/* Shared styles */
+img.max-width {
+  width: 100%;
+  margin: auto;
+}
+
+strong {
+  color: crimson;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 0.6em;
+}
+
+#footer {
+  position: absolute;
+  margin: 20px;
+  bottom: 0;
+  left: 0;
+  font-size: 2em;
+  opacity: 0.5;
+}
+
+#footer span {
+  margin-right: 80px;
+}
+
+/* Per-step styles */
+#growing .city-list {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  color: crimson;
+  font-size: 0.2em;
+  list-style: none;
+  position: relative;
+  text-align: right;
+  font-weight: 700;
+}
+
+#growing h2 {
+  position: relative;
+  text-align: right;
+}
+
+#what h1 img {
+  height: 1.2em;
+  padding-bottom: 5px;
+}
+
+#what li {
+  font-size: 4rem;
+  list-style: none;
+  transform: translateY(800px);
+  -ms-transform: translateY(800px);
+  -moz-transform: translateY(800px);
+  -webkit-transform: translateY(800px);
+  -o-transform: translateY(800px);
+  transition: all 1s;
+  -ms-transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+#what.step.present li {
+  transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -o-transform: translateY(0px);
+}
+
+#tech-social .tech-social-text {
+  position: relative;
+}
+
+#tech-social .tech-social-images-container {
+  overflow: hidden;
+  height: 500px;
+  width: 750px;
+  margin: auto;
+}
+
+#tech-social .tech-social-images-container img {
+  height: 500px;
+}
+
+#tech-social.step img {
+  transition: all 10s 1s;
+  -ms-transition: all 10s 1s;
+  -moz-transition: all 10s 1s;
+  -webkit-transition: all 10s 1s;
+  transition: all 10s 1s;
+}
+
+#tech-social.step.present img {
+  transform: translateY(-400%);
+  -ms-transform: translateY(-400%);
+  -moz-transform: translateY(-400%);
+  -webkit-transform: translateY(-400%);
+  transform: translateY(-400%);
+}
+
+#tech-social.step .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/hackernest-bg.jpg");
+  opacity: 0;
+  transform: scale(2);
+  transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+#tech-social.step.active .background {
+  opacity: 0.25;
+}
+
+#map {
+  position: fixed;
+  width: 100%;
+  transform: translate(20%, 30%) scale(2.6);
+  -ms-transform: translate(20%, 30%) scale(2.6);
+  -moz-transform: translate(20%, 30%) scale(2.6);
+  -webkit-transform: translate(20%, 30%) scale(2.6);
+  -o-transform: translate(20%, 30%) scale(2.6);
+}
+
+.city-count {
+  font-size: 3em;
+  transition: color 1s;
+  -ms-transition: color 1s;
+  -moz-transition: color 1s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.step.present .city-count {
+  color: crimson;
+}
+
+#title-new-york {
+  padding-top: 50px;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.step.present #title-new-york {
+  opacity: 1;
+}
+
+#venue .logo,
+#sponsor-1 .logo,
+#sponsor-2 .logo {
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo.techweek img,
+.logo.rise img,
+{
+  width: 100%;
+}
+
+.logo.grindr img {
+  max-height: 300px;
+}
+
+.logo.twitter img {
+  max-height: 200px;
+  padding: 20px;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.thanks .logo-text p,
+.thanks .organizer-text p,
+.thanks .social-text p {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.thanks .organizer-text .email {
+  font-size: 0.6em;
+}
+
+.thanks .organizer img {
+  margin-top: 1em;
+  border-radius: 100%;
+  height: 200px;
+}
+
+.thanks .organizer-options {
+  list-style: none;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.thanks ul.organizer-options {
+  display: inline-block;
+  margin: 0;
+}
+
+.thanks .organizer-options li {
+  display: inline-block;
+}
+
+.thanks .organizer-message span {
+  font-weight: 300;
+  font-size: 0.7em;
+  padding: 0;
+}
+
+.organizer-option-volunteer,
+.organizer-option-host,
+.organizer-option-sponsor {
+  transition: color 1s;
+  -ms-transition: color 1s;
+  -moz-transition: color 1s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.step.present.thanks .organizer-option-volunteer {
+  color: crimson;
+}
+
+.step.present.thanks .organizer-option-host {
+  color: crimson;
+  transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.step.present.thanks .organizer-option-sponsor {
+  color: crimson;
+  transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+#social .social-hashtag {
+  font-size: 2em;
+}
